@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Integrador AURA</title>
+  </head>
+  <body>
+    <header>
+      <h1>PROYECTO INTEGRADOR SISTEMA AURA</h1>
+      <figure>
+        <img src="imagenes/presentacion.png" alt="Proyecto Integrador" />
+      </figure>
+      <h2>Bienvenidos</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="Descripcion del proyecto">Descripcion del proyecto</a>
+          </li>
+          <li><a href="¿Por qué es importante?">¿Por qué es importante?</a></li>
+          <li><a href="Objetivo">Objetivo</a></li>
+          <li>
+            <a href="¿Cómo funciona el sistema?">¿Cómo funciona el sistema?</a>
+          </li>
+          <li>
+            <a href="Formulario de caracterización"
+              >Formulario de caracterización</a
+            >
+          </li>
+          <li>
+            <a href="Resultados del análisis del sistema de caracterización"
+              >Resultados del análisis del sistema de caracterización</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Descripcion del proyecto</h2>
+        <p>
+          Este sistema está enfocado en identificar posibles riesgos en los
+          estudiantes para mejorar su rendimiento y bienestar
+        </p>
+        <video width="640" height="360" controls>
+          <source src="video/videoaura.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de videos.
+        </video>
+        <h2>¿Por qué es importante?</h2>
+        <p>
+          AURA centraliza la información estudiantil y permite detectar
+          problemas de forma temprana.
+        </p>
+        <br />
+        <h2>Objetivo</h2>
+        <p>
+          El objetivo principal es desarrollar un prototipo funcional que
+          integre un sistema en Java para el análisis de datos y una interfaz
+          web que permita ingresar y visualizar la información de los
+          estudiantes.
+        </p>
+        <br />
+        <h2>¿Cómo funciona el sistema?</h2>
+        <ol>
+          <li>El estudiante llena el formulario</li>
+          <li>Los datos se almacenan en matrices</li>
+          <li>Java procesa la información</li>
+          <li>Se clasifica el riesgo</li>
+          <li>Se muestran resultados</li>
+        </ol>
+        <br />
+        <h2>Formulario de caracterizacion</h2>
+        <form>
+          <h3>Datos personales</h3>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" name="nombre" id="nombre" /> <br />
+          <label for="Edad">Edad</label>
+          <input type="number" name="Edad" id="Edad" /> <br />
+
+          <label>Sexo</label>
+          <input type="radio" value="M" /> <span>Masculino </span>
+          <input type="radio" value="F" /> <span>Femenino </span>
+          <br />
+
+          <h3>Datos académicos</h3>
+          <label for="Promedio">Promedio</label>
+          <input type="text" name="Promedio" id="Promedio" /> <br />
+          <label>¿Ha perdido alguna asignatura?</label>
+          <input type="radio" value="Si" /> <span>Si </span>
+          <input type="radio" value="No" /> <span>No </span>
+          <br />
+          <h3>Situación socioecónomica</h3>
+          <label for="Estrato">Estrato:</label>
+          <select id="Estrato" name="Estrato">
+            <option value="">-- Seleccione --</option>
+            <option value="Estrato 1 ">Estrato 1</option>
+            <option value="Estrato 2 ">Estrato 2</option>
+            <option value="Estrato 3 ">Estrato 3</option>
+            <option value="Estrato 4 ">Estrato 4</option>
+            <option value="Estrato 5 ">Estrato 5</option>
+            <option value="Estrato 6 ">Estrato 6</option>
+          </select>
+          <br />
+          <label>¿Trabaja?</label>
+          <input type="radio" value="Si" /> <span>Si </span>
+          <input type="radio" value="No" /> <span>No </span>
+          <br />
+          <h3>Estado de animo y salud</h3>
+          <label for="¿Como te sientes emocionalmente?"
+            >¿Como te sientes emocionalmente?:</label>
+          <select
+            id="¿Como te sientes emocionalmente?" name="¿Como te sientes emocionalmente?">
+            <option value="">-- Seleccione --</option>
+            <option value="Bien">Bien</option>
+            <option value="Regular">Regular</option>
+            <option value="Mal">Mal</option>
+          </select>
+          <br />
+          <label>¿Problemas de salud?</label>
+          <input type="radio" value="Si" /> <span>Si </span>
+          <input type="radio" value="No" /> <span>No </span>
+          <br />
+          <input type="submit" value="Enviar" />
+        </form>
+        <h2>Resultados del análisis del sistema de caracterización</h2>
+        <p>
+          En esta sección se muestran los resultados obtenidos a partir del
+          análisis de la información ingresada por los estudiantes en el
+          formulario de caracterización.
+        </p>
+        <p>
+          Los datos son procesados mediante un programa en Java, el cual permite
+          clasificar a cada estudiante según su nivel de riesgo académico,
+          teniendo en cuenta variables como el rendimiento académico, la
+          situación socioeconómica y el estado emocional. La siguiente tabla
+          presenta un ejemplo de cómo el sistema organiza la información de los
+          estudiantes y muestra su nivel de riesgo:
+        </p>
+        <body>
+        <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Estrato</th>
+            <th>Promedio</th>
+            <th>Estado emocional</th>
+            <th>Riesgo</th>
+        </tr>
+        <tr>
+            <td>Juan Pérez</td>
+            <td>20</td>
+            <td>2</td>
+            <td>3.2</td>
+            <td>Regular</td>
+            <td>Alto</td>
+        </tr>
+        <tr>
+            <td>Ana López</td>
+            <td>22</td>
+            <td>3</td>
+            <td>4.5</td>
+            <td>Bueno</td>
+            <td>Bajo</td>
+        </tr>
+        <tr>
+            <td>Luis Duarte</td>
+            <td>26</td>
+            <td>2</td>
+            <td>2.9</td>
+            <td>Mal</td>
+            <td>Alto</td>
+        </tr>
+        </table>
+        <br>
+        <p> En conclusión, el Sistema AURA permite recolectar, procesar y analizar información de los estudiantes con el fin de identificar posibles riesgos académicos y personales.
+         Este prototipo integra conocimientos de análisis de requisitos, programación en Java y desarrollo web, mostrando una solución organizada y funcional.
+         Muchas gracias.
+         </p>
+      </main>
+      <footer>
+       <p>Autores:</p>
+    <ul>
+        <li>Maria Camila Bermudez Duarte </li>
+        <p><strong>Correo:</strong>mabermudez@cesde.net</p>
+        <li>Staly Gregorio González Ramirez</li>
+        <p><strong>Correo:</strong>stalygonzalez@gmail.com</p>
+        <li>Juan David Benjumea Franco </li>
+        <p><strong>Correo:</strong>juandabf127@gmail.com</p>
+    </ul>
+      <p>&copy; 2026 Proyecto Integrador AURA</p>
+      </footer> 
+    </header>
+  </body>
+</html>
